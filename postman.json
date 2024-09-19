@@ -65,24 +65,6 @@
 					]
 				}
 			}
-		},
-		{
-			"name": "Excluir Produto",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "{{base_url}}/api/produtos/1",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"api",
-						"produtos",
-						"1"
-					]
-				}
-			}
 		}
 	]
 }
