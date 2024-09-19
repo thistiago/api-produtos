@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "f93c8c9b-6262-4b5e-97b6-7b50dbf6b223",
+		"name": "API de Produtos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/produtos",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"produtos"
+					]
+				}
+			}
+		},
+		{
+			"name": "Criar Produto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Produto Teste\",\n    \"preco\": 29.99\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/produtos",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"produtos"
+					]
+				}
+			}
+		},
+		{
+			"name": "Buscar Produto por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/produtos/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"produtos",
+						"1"
+					]
+				}
+			}
+		},
+		{
+			"name": "Excluir Produto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/produtos/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"produtos",
+						"1"
+					]
+				}
+			}
+		}
+	]
+}
+
